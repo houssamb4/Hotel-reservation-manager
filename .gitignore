@@ -1,0 +1,38 @@
+# Build outputs
+bin/
+obj/
+*.exe
+*.dll
+*.pdb
+*.cache
+*.user
+
+# Visual Studio artifacts
+.vs/
+*.suo
+*.ntvs_analysis.dat
+*.njsproj.TemplateData/
+
+# NuGet
+packages/
+*.nupkg
+project.lock.json
+
+# ASP.NET Core
+appsettings.Development.json
+
+# User-specific files
+*.user
+*.userosscache
+*.sln.docstates
+
+# Logs
+logs/
+*.log
+
+# OS artifacts
+Thumbs.db
+.DS_Store
+
+# Publish output
+publish/

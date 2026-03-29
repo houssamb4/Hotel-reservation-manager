@@ -12,8 +12,8 @@ namespace Partie_Font_Office.Controllers
             try
             {
                 var emailMessage = new MimeMessage();
-                emailMessage.From.Add(new MailboxAddress("Golden Horizon Hotel", "golden-horizon@contact.com"));
-                emailMessage.To.Add(new MailboxAddress("Admin", "houssambouzid042@gmail.com"));
+                emailMessage.From.Add(new MailboxAddress("Golden Horizon Hotel", "no-reply@golden-horizon.com"));
+                emailMessage.To.Add(new MailboxAddress("Admin", "admin@example.com"));
                 emailMessage.Subject = subject;
 
                 // HTML email content with inline CSS for styling
@@ -42,7 +42,7 @@ namespace Partie_Font_Office.Controllers
                 using (var client = new SmtpClient())
                 {
                     client.Connect("smtp.gmail.com", 587, false);
-                    client.Authenticate("testphpmailer64@gmail.com", "mmom zfap shgg utbl");
+                    client.Authenticate("YOUR_EMAIL_HERE", "YOUR_PASSWORD_HERE");
                     client.Send(emailMessage);
                     client.Disconnect(true);
                 }
